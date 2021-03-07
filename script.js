@@ -47,6 +47,8 @@ map.add(metrolayer);
   
   legend.respectLayerVisibility = false;
   
+  view.when(function() {
+  
   var legend = new Legend({
   view: view,
   layerInfos: [{
@@ -58,5 +60,5 @@ map.add(metrolayer);
 view.ui.add(legend, "top-right");
   
   // Legend will not work still
-  
+  });
 });
